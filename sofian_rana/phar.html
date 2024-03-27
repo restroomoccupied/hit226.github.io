@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Usage Data Entry</title>
+    <link rel="stylesheet" href="test2.css">
+
+</head>
+<body>
+    <header>
+        <h1>Medication Usage Data Entry</h1>
+    </header>
+    <main>
+        <form id="medicationForm">
+            <div class="form-group">
+                <label for="name">Patient Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="medication">Medication Taken Currently:</label>
+                <input type="text" id="medication" name="medication" required>
+            </div>
+
+            <div class="form-group">
+                <label for="frequency">Frequency:</label>
+                <input type="text" id="frequency" name="frequency" required>
+            </div>
+
+            <div class="form-group">
+              <label for="allergies">Allergies:</label>
+              <input type="text" id="allergies" name="allergies" required>
+            </div>
+
+           <div class="form-group">
+            <label for="instructions">Special Instructions:</label>
+            <input type="text" id="instructions" name="instructions" required>
+           </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+        <p id="confirmationMessage" aria-live="polite" aria-atomic="true" style="display: none;">Submission has been received.</p>
+    </main>
+
+    <script src="test2.js" defer></script>
+</body>
+</html>
